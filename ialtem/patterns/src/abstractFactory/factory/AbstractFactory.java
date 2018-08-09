@@ -1,5 +1,6 @@
 package abstractFactory.factory;
 
+
 public abstract class AbstractFactory {
 	public abstract Window buildWindow();
 	public abstract Button buildButton(String label);
