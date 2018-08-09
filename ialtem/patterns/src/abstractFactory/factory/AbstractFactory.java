@@ -1,6 +1,10 @@
 package abstractFactory.factory;
 
 
+/**
+ * @author michel
+ *
+ */
 public abstract class AbstractFactory {
 	public abstract Window buildWindow();
 	public abstract Button buildButton(String label);
