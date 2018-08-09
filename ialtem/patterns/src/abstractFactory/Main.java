@@ -8,6 +8,7 @@ import abstractFactory.factory.swt.SwtFactory;
 
 public class Main {
 // 	static public final AbstractFactory factory=new SwingFactory();
+	
 	static public final AbstractFactory factory=new SwtFactory();
 
 	public static void main(String[] args) {
