@@ -11,7 +11,7 @@ import java.io.PrintStream;
  */
 public class SingletonLogger {
 
-	private static SingletonLogger singleton=null;
+	private static SingletonLogger instance=null;
 	private final PrintStream out;
 	
 	private SingletonLogger(PrintStream stream){
@@ -22,10 +22,10 @@ public class SingletonLogger {
 	}
 	
 	public static SingletonLogger getInstance(){
-		if (singleton==null){
-			singleton=new SingletonLogger(System.err);
+		if (instance==null){
+			instance=new SingletonLogger(System.err);
 		}
-		return singleton;
+		return instance;
 	}
 	
 	public PrintStream out(String msg){
