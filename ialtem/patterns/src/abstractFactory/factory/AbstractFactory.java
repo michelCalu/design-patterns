@@ -3,7 +3,7 @@ package abstractFactory.factory;
 
 /**
  * @author michel
- *
+ * testing the AbstractFacory
  */
 public abstract class AbstractFactory {
 	public abstract Window buildWindow();
