@@ -11,6 +11,7 @@ public class MainApp1 {
 		jean.set("name", "jean").set("age", 10);
 		Prototype hector=jean.copy().set("name", "hector");
 		Prototype toyota=new Prototype().set("marque", "toyota").set("plaque", "XXX999");
+		Prototype bmw=toyota.copy().set("marque", "bmw").set("plaque", "ABC-123").set("puissance", "136cv").set("nombre de places", "5");
 		
 		
 		// 2 class objects : Person, Car
@@ -42,9 +43,16 @@ public class MainApp1 {
 		System.out.println(hector.toString());
 		System.out.println(jean.toString());
 		System.out.println(toyota.toString());
+		System.out.println(bmw.toString());
 		System.out.println(tPerson.toString());
 		System.out.println(tCar.toString());
 		System.out.println(tClass.toString());
+		
+		System.out.println();
+		
+		System.out.println(jean.get("name"));
+		
+		
 		
 	}
 

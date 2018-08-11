@@ -46,14 +46,14 @@ public class Prototype {
 	 * @return a fresh copy of this
 	 */
 	public Prototype copy(){
-		Prototype result=new Prototype(attributes);
-		return result;
+		return new Prototype(attributes);
+	
 	}
 	
 	@Override
 	public String toString() {
 		StringBuffer buf=new StringBuffer();
-		buf.append(String.format("#%-11d:== ", this.hashCode()));
+		buf.append(String.format("#%-10d:== ", this.hashCode()));
 		for (String n: attributes.keySet()){
 			Object value = attributes.get(n);
 			if (value instanceof Prototype){

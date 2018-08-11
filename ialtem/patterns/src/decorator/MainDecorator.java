@@ -4,12 +4,16 @@ public class MainDecorator {
 
 	public static void main(String[] args) {
 		IReal real = new Real();
-		IReal decoCheck = new DecoratorCheckSyntax(real);
-		IReal decoLog = new DecoratorLogging(decoCheck);
+		IReal decoCheckSyntax = new DecoratorCheckSyntax(real);
+		IReal decoLogging = new DecoratorLogging(decoCheckSyntax);
 
-		for (String query : new String[] { "15", "-15", "foo15", "", null }) {
-			System.out.printf("Evaluation of \"%s\" is %d.\n", query,decoLog.compute(query));
-		}
+	
+		
+		System.out.printf("Evaluation of \"%s\" is %d.\n", "15",decoLogging.compute("15"));
+		System.out.println();
+		System.out.printf("Evaluation of \"%s\" is %d.\n", "foo",decoLogging.compute("foo"));
+		System.out.println();
+
 	}
 
 }

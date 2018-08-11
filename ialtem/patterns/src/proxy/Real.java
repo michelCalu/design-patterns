@@ -8,10 +8,12 @@ public class Real implements IReal {
 	@Override
 	public long compute(String query){
 		try {
-			return Long.parseLong(query);
+			return Long.parseLong(query)*2;
 		} catch (NumberFormatException e) {
 			return 0;
 		}
 	}
+	
+	
 
 }

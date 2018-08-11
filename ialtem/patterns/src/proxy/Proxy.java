@@ -12,6 +12,8 @@ public class Proxy implements IReal {
 	@Override
 	public long compute(String query) {
 		return reference.compute(query);
-	}	
+	}
+
+	
 
 }
