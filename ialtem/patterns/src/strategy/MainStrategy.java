@@ -20,7 +20,7 @@ public class MainStrategy {
 
 		for (String user : preferences.keySet()) {
 			String[] path = preferences.get(user).computePath("Cloudcity", "Suncity");
-			System.out.printf("Path for %s is %s\n", user, Arrays.toString(path));
+			System.out.printf("The path for %s is %s\n", user, Arrays.toString(path));
 		}
 	}
 

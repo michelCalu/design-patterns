@@ -14,6 +14,10 @@ public class DataState implements IDataState, Cloneable  {
 	protected Object clone() throws CloneNotSupportedException {		
 		return super.clone();
 	}
+
+	
+	
+	
 	
 	
 }

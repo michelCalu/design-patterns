@@ -11,8 +11,11 @@ public class MainState {
 		System.out.println("Usage: type \"localhost:8888\" in your browser twice.");
 		
 		try {
-			ctx.open(PORT);
+			
+			ctx.open(8888);
+			
 			for (int i=1;i<3;i++){
+				System.out.println("opening");
 				System.out.println(ctx.receive());
 			}
 			ctx.close();
@@ -22,7 +25,6 @@ public class MainState {
 			}
 			ctx.close();
 		} catch (IllegalState e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		

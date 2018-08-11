@@ -4,9 +4,9 @@ public class StatefullClass {
 	private DataState state=new DataState();
 	
 	public StatefullClass(String name,String firstname, int age) {
-		state.name=name;
-		state.firstname=firstname;
-		state.age=age;		
+		this.state.name=name;
+		this.state.firstname=firstname;
+		this.state.age=age;		
 	}
 
 	/**
@@ -16,7 +16,7 @@ public class StatefullClass {
 		state.age++;
 	}
 	
-	public IDataState getMemento(){
+	public IDataState getState(){
 		try {
 			return (IDataState)state.clone();
 		} catch (CloneNotSupportedException e) {			
@@ -26,7 +26,7 @@ public class StatefullClass {
 		return null;
 	}
 	
-	public void setMemento(IDataState state){
+	public void setState(IDataState state){
 		this.state=(DataState)state;
 	}
 

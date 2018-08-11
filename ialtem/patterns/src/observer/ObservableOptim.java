@@ -12,9 +12,9 @@ public class ObservableOptim extends Observable {
 	}
 
 	@Override
-	public void notifyObservers() {
+	public void notifyObs() {
 		if (hasChanged) {
-			super.notifyObservers();
+			super.notifyObs();
 			clearChanged();
 		}
 	}

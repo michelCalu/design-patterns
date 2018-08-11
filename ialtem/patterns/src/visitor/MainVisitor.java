@@ -16,8 +16,9 @@ public class MainVisitor {
 	public static void main(String[] args) {
 		Program program = new Program();
 		program.add(new DeclVariable("x"))
-				.add(new Assignment("x", new ExprSum(new Value(5), new ExprSum(new Value(6), new Variable("x")))))
+				.add(new Assignment("x", new ExprSum(new Value(5), new ExprSum(new Value(1), new Value(2)))))
 				.add(new PrintExpression(new Variable("x")));
+		
 		VisitorPrettyPrinting prettyPrinter = new VisitorPrettyPrinting();
 		VisitorExecution execution = new VisitorExecution();
 		VisitorChecking checking = new VisitorChecking();

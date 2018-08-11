@@ -1,6 +1,0 @@
-
-/**
- * @author Vincent
- *
- */
-package observer;

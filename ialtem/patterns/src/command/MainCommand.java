@@ -7,9 +7,10 @@ public class MainCommand {
 
 		Document doc = new Document("How to use the Command pattern to undo/redo...");
 
-		invoker.add(new CommandSetText(doc, "A bove ante, ab asino retro, a stulto undique caveto"))
-				.add(new CommandSetChar(doc, 0, '!')).add(new CommandDelChar(doc, 10))
-				.add(new CommandSetText(doc, "A falsis principiis proficisci"));
+		invoker.add(new CommandSetText(doc, "arbre avion moto bateau"))
+			.add(new CommandSetChar(doc, 0, '!')).add(new CommandDelChar(doc, 10))
+		//	.add(new CommandSetText(doc, "vache oiseau canard serpent"));
+		;
 
 		invoker.execute();
 

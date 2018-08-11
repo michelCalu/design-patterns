@@ -1,6 +1,0 @@
-
-/**
- * @author UNamur
- *
- */
-package visitor;

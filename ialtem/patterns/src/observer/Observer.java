@@ -1,5 +1,6 @@
 package observer;
 
 public interface Observer {
-	void notify(Observable subject);
+	void update(Observable subject);
+	void update(ObservableOptim subject);
 }

@@ -45,7 +45,7 @@ public class Data extends ObservableOptim {
 				// unmodified score __
 			}
 		}
-		notifyObservers();
+		notifyObs();
 	}
 
 	public int get(String student, String lesson) throws NotFound {

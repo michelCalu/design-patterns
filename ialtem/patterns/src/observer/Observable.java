@@ -6,21 +6,21 @@ import java.util.Set;
 public abstract class Observable {
 	private final Set<Observer> observers = new HashSet<Observer>();
 
-	public void addObserver(Observer o) {
+	public void attach(Observer o) {
 		assert o != null;
 
 		observers.add(o);
 	}
 
-	public void deleteObserver(Observer o) {
+	public void detach(Observer o) {
 		assert o != null;
 
 		observers.remove(o);
 	}
 
-	public void notifyObservers() {
+	public void notifyObs() {
 		for (final Observer o : observers) {
-			o.notify(this);
+			o.update(this);
 		}
 	}
 

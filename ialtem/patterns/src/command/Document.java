@@ -12,7 +12,6 @@ public class Document  {
 	}
 	
 	public void set(String s) {
-		assert s!=null;
 		stringbuffer=new StringBuffer(s);
 	}
 	

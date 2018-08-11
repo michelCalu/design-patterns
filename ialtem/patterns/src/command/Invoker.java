@@ -11,7 +11,6 @@ public class Invoker {
 	}
 
 	public Invoker add(Command c) {
-		assert c != null;
 
 		commands.add(c);
 		return this;
