@@ -1,7 +1,7 @@
 package decorator;
 
 public abstract class Proxy implements IReal {
-	private final IReal reference;
+	protected final IReal reference;
 	
 	Proxy(IReal real){
 		assert real!=null;

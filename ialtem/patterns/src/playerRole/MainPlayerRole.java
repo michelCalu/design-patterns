@@ -16,9 +16,8 @@ public class MainPlayerRole {
 		player.addRole(Bachelor.class, new Object[]{ "Programming", "Operating Systems", "Database"});
 		player.addRole(Worker.class, new Object[]{ "456-585454745-11", 21, "Namur" });
 		
-		Worker worker;
 		
-		worker=(Worker) player.getRole(Worker.class);
+		Worker worker=(Worker) player.getRole(Worker.class);
 
 		System.out.printf("IDcard of John is %s\n",worker.getIDCard());
 		System.out.printf("Age of John is %s\n",worker.getAge());
@@ -27,6 +26,8 @@ public class MainPlayerRole {
 		player.removeRole(Worker.class);
 		
 		worker=(Worker) player.getRole(Worker.class);
+		
+		System.out.printf("Exception here normally!",worker.getCity()); // should throw an exception !
 		
 		assert worker==null;
 		

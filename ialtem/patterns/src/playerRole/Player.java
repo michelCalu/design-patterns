@@ -4,6 +4,8 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.function.Predicate;
 
+import playerRole.roles.UnsupportedRoleException;
+
 public class Player {
 	Set<AbstractRole> roles=new HashSet<>();
 	
@@ -36,7 +38,7 @@ public class Player {
 		
 	}
 
-	public AbstractRole getRole(Class<?> role){
+	public AbstractRole getRole   (Class<?> role){
 		assert role!=null;
 		
 		for (AbstractRole r: roles){
@@ -44,6 +46,6 @@ public class Player {
 				return r;
 			}
 		}
-		return null;
+		throw new UnsupportedRoleException("unsupported role for this player");
 	}	
 }

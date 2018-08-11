@@ -10,7 +10,9 @@ package decorator;
 public class DecoratorCheckSyntax extends Proxy {
 
 	public DecoratorCheckSyntax(IReal real) {
+		
 		super(real);
+		System.out.printf("creating DecoratorCheckSyntax(Ireal real)"+this.reference);
 	}
 
 	@Override

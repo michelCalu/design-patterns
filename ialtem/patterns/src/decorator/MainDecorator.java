@@ -9,7 +9,7 @@ public class MainDecorator {
 
 	
 		
-		System.out.printf("Evaluation of \"%s\" is %d.\n", "15",decoLogging.compute("15"));
+		System.out.printf("Evaluation of \"%s\" is %d.\n", "-15",decoLogging.compute("-15"));
 		System.out.println();
 		System.out.printf("Evaluation of \"%s\" is %d.\n", "foo",decoLogging.compute("foo"));
 		System.out.println();
