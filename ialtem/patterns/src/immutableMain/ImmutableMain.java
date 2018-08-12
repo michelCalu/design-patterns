@@ -18,10 +18,16 @@ public class ImmutableMain {
 	    IDate m = new MutableDate();
 	    
 	    MutableDate rw=(MutableDate) m;
+	    rw.setDate(diff);
 	    ImmutableDate ro=m.getImmutableDate();
 	    
-	    rw.setDate(diff);
-	    ro.getDate();
+	    
+	
+	    
+	    System.out.println("rw= "+rw.getDate());
+	    System.out.println("rw= "+rw.getImmutableDate());
+	    System.out.println("ro= "+ro.getDate());
+	    System.out.println("ro= "+ro.getImmutableDate());
 	    
 	
 		
