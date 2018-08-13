@@ -14,13 +14,13 @@ public abstract class AbstractRole {
 		attributes = objects;
 	}
 
-	public void setPlayer(Player player){
-		assert player!=null;
-		
-		this.player=player;
-	}
+//	public void setPlayer(Player player){
+//		assert player!=null;
+//		
+//		this.player=player;
+//	}
 
-	public Player getPlayer(){
-		return player;
-	}
+//	public Player getPlayer(){
+//		return player;
+//	}
 }

@@ -13,10 +13,10 @@ public class Prototype {
 	}
 	
 	@SuppressWarnings("unchecked")
-	private Prototype(HashMap<String, Object> gene){
-		assert gene!=null;
+	private Prototype(HashMap<String, Object> generator){
+		assert generator!=null;
 		
-		attributes=(HashMap<String, Object>)gene.clone();
+		attributes=(HashMap<String, Object>)generator.clone();
 	}
 	
 	/**

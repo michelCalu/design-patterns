@@ -23,6 +23,7 @@ public abstract class IComponent {
 	}
 
 	public IComponent getDroite() {
+		System.out.println(droite+ "in getDroite");
 		return droite;
 	}
 

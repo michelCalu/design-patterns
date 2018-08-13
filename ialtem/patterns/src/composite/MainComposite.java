@@ -12,6 +12,8 @@ public class MainComposite {
 		father.addComponent(l1);
 		father.addComponent(l2);
 		
+		l1.getDroite();
+		
 		
 	}
 	
